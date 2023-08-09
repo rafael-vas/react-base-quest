@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import ColorfulText from "./components/text/Text";
+import Button from "./components/button/Button";
+import Title from "./components/title/Title";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Title>Colorful Texts</Title>
+
+      <ColorfulText colorCode="purple" innertext="this is my first paragraph" />
+      <ColorfulText colorCode="blue" innertext="this is my second paragraph" />
+
+      <Button label="Baixar CV" />
     </div>
   );
 }
